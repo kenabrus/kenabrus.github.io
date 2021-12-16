@@ -1,0 +1,63 @@
+ng add @angular/material
+npm i material-kit
+npm install bootstrap
+npm install jquery
+npm install tether
+npm install ngx-bootstrap --save
+ng add @angular/localize
+npm install moment --save
+npm install @auth0/angular-jwt
+
+__________  polecenia po kolei _______
+ng g c _components/nav --module app
+ng g c _components/content --module app
+ng g c _components/footer --module app
+ng g s _services/message --module app
+
+---------  authentication  -------------
+ng g m _modules/authentication 
+ng g c _modules/authentication/components/login
+ng g c _modules/authentication/components/logout
+ng g c _modules/authentication/components/register
+ng g c _modules/authentication/components/registerResult
+ng g s _services/authentication
+
+------  product  -----------
+ng g m _modules/product
+ng g c _modules/product/components/productList
+ng g s _services/product
+ng g s _services/base
+
+------  rental  -----------
+ng g m _modules/rental
+ng g c _modules/rental/components/reservation
+ng g c _modules/rental/components/productstoreservationlist
+ng g c _modules/rental/components/reservationslist
+ng g c _modules/rental/components/reservatioresult
+ng g s _services/rental
+RentalInputModel
+
+
+------  users  -----------
+ng g m _modules/users
+ng g c _modules/users/components/profile
+ng g c _modules/users/components/adminpanel
+
+ng g c _modules/users/components/userslist
+ng g c _modules/users/components/edit-user
+
+ng g c _modules/users/components/productslist
+ng g c _modules/users/components/edit-product
+
+ng g c _modules/users/components/reservationslist
+ng g c _modules/users/components/edit-reservation
+ng g c _modules/users/components/allreservationslist
+
+ng g c _modules/users/components/modal-container
+ng g c _modules/users/components/modal-content
+ng g s _services/user
+
+ng g s _services/shared
+
+----- materialize -----
+ng g m app.materialize
