@@ -31,17 +31,9 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss",
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "./node_modules/material-kit/assets/css/material-kit.css"
-          ],
-          "scripts": [
-              "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.js",
-              "./node_modules/material-kit/assets/js/material-kit.js"
-          ]
+              "src/styles.scss"
+            ],
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -107,7 +99,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []

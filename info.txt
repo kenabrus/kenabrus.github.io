@@ -3,7 +3,6 @@ npm i material-kit
 npm install bootstrap
 npm install jquery
 npm install tether
-npm install ngx-bootstrap --save
 ng add @angular/localize
 npm install moment --save
 npm install @auth0/angular-jwt
