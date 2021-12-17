@@ -1,35 +1,19 @@
-<nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-        <div class="navbar-translate">
-            <a class="navbar-brand" href="#">
-                <img src="../../../assets/img/logo_warehouse.png" style="width: 90px; height: 90px;" alt="MyWarehouse"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/adminpanel']">
-                        <i class="material-icons">content_paste</i> adminpanel
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/profile']">
-                        <i class="material-icons">content_paste</i> profile
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/logout']">
-                        <i class="material-icons">apps</i> logout
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-</nav>
-
+<mat-nav-list>
+    <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+        <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
+    </a>
+    <a mat-list-item routerLink="/owner" (click)="onSidenavClose()">
+        <mat-icon>assignment_ind</mat-icon> <span class="nav-caption">Owner Actions</span>   
+    </a>
+    <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+        <mat-icon>account_balance</mat-icon><span class="nav-caption">Account Actions</span>
+    </a>
+    <mat-list-item [matMenuTriggerFor]="menu">
+        <mat-icon>unfold_more</mat-icon>
+        <a matline>Example</a>
+    </mat-list-item>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="onSidenavClose()">View profile</button>
+      <button mat-menu-item (click)="onSidenavClose()">Add contact</button>
+    </mat-menu>
+</mat-nav-list>
