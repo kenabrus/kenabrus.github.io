@@ -7,11 +7,14 @@ ng add @angular/localize
 npm install moment --save
 npm install @auth0/angular-jwt
 
+https://code-maze.com/angular-material-navigation/
+
 __________  polecenia po kolei _______
 ng g c _components/nav --module app
 ng g c _components/content --module app
 ng g c _components/footer --module app
 ng g s _services/message --module app
+ng g c navigation/header --skipTests --module app
 
 ---------  authentication  -------------
 ng g m _modules/authentication 

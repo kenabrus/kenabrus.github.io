@@ -6,6 +6,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
-html, body { height: 100%; }
+/* for sidenav to take a whole page */
+html, body {margin: 0; height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

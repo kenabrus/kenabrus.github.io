@@ -11,13 +11,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './_components/nav/nav.component';
 import { ContentComponent } from './_components/content/content.component';
 import { FooterComponent } from './_components/footer/footer.component';
+import { HeaderComponent } from './navigation/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,7 @@ import { FooterComponent } from './_components/footer/footer.component';
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule,
+    AppMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
