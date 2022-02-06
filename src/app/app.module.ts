@@ -14,6 +14,7 @@ import { FooterComponent } from './_components/footer/footer.component';
 import { HomeComponent } from './_components/home/home.component';
 import { LayoutComponent } from './_components/layout/layout.component';
 import { HeaderComponent } from './_components/header/header.component';
+import { MediaQueryStatusComponent } from './_utils/media-query-status/media-query-status.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HeaderComponent } from './_components/header/header.component';
     FooterComponent,
     HomeComponent,
     LayoutComponent,
-    HeaderComponent
+    HeaderComponent,
+    MediaQueryStatusComponent
   ],
   imports: [
     CommonModule,

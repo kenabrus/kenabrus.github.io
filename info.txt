@@ -10,6 +10,9 @@ npm i @angular/flex-layout
 
 https://code-maze.com/angular-material-navigation/
 
+https://github.com/angular/flex-layout/wiki/fxLayout-API
+https://github.com/angular/flex-layout/wiki/API-Documentation
+
 __________  polecenia po kolei _______
 ng g c _components/nav --module app
 ng g c _components/content --module app
@@ -19,6 +22,8 @@ ng g c _components/layout --module app --skipTests
 ng g c _components/header --module app --skipTests
 
 ____________   TO DO ______________
+
+ng g c _utils/MediaQueryStatus --module app --skipTests
 
 
 ng g s _services/message --module app
