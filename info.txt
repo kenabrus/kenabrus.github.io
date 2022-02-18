@@ -24,6 +24,9 @@ ng g c _components/header --module app --skipTests
 ____________   TO DO ______________
 
 ng g c _utils/MediaQueryStatus --module app --skipTests
+ng g m _modules/product
+ng g c _modules/product/product-list --module product --skipTests
+
 
 
 ng g s _services/message --module app
