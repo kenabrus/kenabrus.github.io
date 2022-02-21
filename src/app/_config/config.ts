@@ -2,8 +2,8 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class AppConfig {
-    // private url = 'http://localhost:56119';
-    private url = 'http://rentcarsystem.kenabrus.pl';
+    // private url = 'http://localhost:5000';
+    private url = 'http://core.kenabrus.pl';
     private config: { [key: string]: string };
     constructor() {
         this.config = {

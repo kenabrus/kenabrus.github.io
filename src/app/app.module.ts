@@ -16,6 +16,7 @@ import { LayoutComponent } from './_components/layout/layout.component';
 import { HeaderComponent } from './_components/header/header.component';
 import { MediaQueryStatusComponent } from './_utils/media-query-status/media-query-status.component';
 import { ProductModule } from './_modules/product/product.module';
+import { UserModule } from './_modules/user/user.module';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ProductModule } from './_modules/product/product.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     AppMaterialModule,
-    ProductModule
+    ProductModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
