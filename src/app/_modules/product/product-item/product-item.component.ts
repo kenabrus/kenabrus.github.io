@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../Product';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product-item',
@@ -8,11 +9,17 @@ import { Product } from '../Product';
 })
 export class ProductItemComponent implements OnInit {
 
-  @Input() product: any;
+  @Input() product: Product | undefined;
+  @Output() onDeleteProduct: EventEmitter<Product> = new EventEmitter();
+  faTimes = faTimes;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onDelete(product: Product) {
+    this.onDeleteProduct.emit(product);
   }
 
 }

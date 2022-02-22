@@ -1,3 +1,7 @@
-<div *ngIf="product">
-    {{product}}
-</div>
+<h3 *ngIf="product">
+    {{product.id}})  {{product.name}} &nbsp;
+    <fa-icon 
+    [icon]="faTimes"
+    (click)="onDelete(product)"
+    ></fa-icon>
+</h3>

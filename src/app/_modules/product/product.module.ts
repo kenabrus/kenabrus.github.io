@@ -7,6 +7,7 @@ import { ProductItemComponent } from './product-item/product-item.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { ProductService } from './product.service';
 
 
 
@@ -21,8 +22,10 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     BrowserModule,
     FontAwesomeModule,
-    HttpClientModule,
     FormsModule,
-  ]
+  ],
+  providers: [
+    ProductService 
+  ],
 })
 export class ProductModule { }

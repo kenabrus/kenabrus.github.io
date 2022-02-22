@@ -96,3 +96,43 @@ ng g s _services/shared
 
 ----- materialize -----
 ng g m app.materialize
+
+
+
+___________  git ____________
+https://www.youtube.com/watch?v=Mfz8NQncwiQ
+
+delete branches: https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
+
+git remote show
+git remote show main
+
+git remote add origin https://....git
+git push --help
+git push -u origin main
+
+git log
+
+git branch
+git branch -a  
+
+
+___________________ delete branches _______
+https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
+
+// delete branch locally
+git checkout main
+git branch -d product
+git branch -d develop
+
+// delete branch remotely
+git push main --delete product  lub  git push origin :product
+git push main --delete develop
+
+  remotes/main/develop
+  remotes/main/main
+  remotes/main/product
+
+_______  add branch _______
+git checkout -b product
+git push -u origin product
