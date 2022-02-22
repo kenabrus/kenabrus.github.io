@@ -16,6 +16,8 @@ db.json
 }
 npm run server
 
+ng add @fortawesome/angular-fontawesome
+
 https://code-maze.com/angular-material-navigation/
 
 https://github.com/angular/flex-layout/wiki/fxLayout-API
@@ -35,6 +37,7 @@ ng g c _utils/MediaQueryStatus --module app --skipTests
 ng g m _modules/product
 ng g c _modules/product/products --module product --skipTests
 ng g s _modules/product/product --skipTests
+ng g c _modules/product/product-item --module product --skipTests
 
 ng g m _modules/user
 ng g c _modules/user/users --module user --skipTests

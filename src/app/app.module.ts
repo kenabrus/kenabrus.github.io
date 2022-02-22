@@ -17,6 +17,7 @@ import { HeaderComponent } from './_components/header/header.component';
 import { MediaQueryStatusComponent } from './_utils/media-query-status/media-query-status.component';
 import { ProductModule } from './_modules/product/product.module';
 import { UserModule } from './_modules/user/user.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { UserModule } from './_modules/user/user.module';
     BrowserAnimationsModule,
     AppMaterialModule,
     ProductModule,
-    UserModule
+    UserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
