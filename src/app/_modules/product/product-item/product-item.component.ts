@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Product } from '../Product';
 
 @Component({
   selector: 'app-product-item',
@@ -8,9 +7,7 @@ import { Product } from '../Product';
 })
 export class ProductItemComponent implements OnInit {
 
-  text : string = 'aaalasd';
-  @Input() product: Product | undefined;
-  @Input() item = '';
+  @Input() product: any;
 
   constructor() { }
 
