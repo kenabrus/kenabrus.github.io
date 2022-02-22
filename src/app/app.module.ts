@@ -15,6 +15,9 @@ import { HomeComponent } from './_components/home/home.component';
 import { LayoutComponent } from './_components/layout/layout.component';
 import { HeaderComponent } from './_components/header/header.component';
 import { MediaQueryStatusComponent } from './_utils/media-query-status/media-query-status.component';
+import { ProductModule } from './_modules/product/product.module';
+import { UserModule } from './_modules/user/user.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { MediaQueryStatusComponent } from './_utils/media-query-status/media-que
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppMaterialModule,
+    ProductModule,
+    UserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
