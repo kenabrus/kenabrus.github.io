@@ -1,8 +1,71 @@
-<p>Products count: {{products.length}}</p>
+<!-- <p>Products count: {{products.length}}</p>
 
 <app-product-item
  *ngFor="let product of products" 
  [product]="product"
  (onDeleteProduct)="deleteProduct(product)"
- ></app-product-item>
+ ></app-product-item> -->
 
+<div class="row">
+    <div class="col-md-12">
+        <table class="table" style="margin: 0; padding: 0;">
+            <thead>
+                <tr>
+                    <th *ngFor="let column of headers" class="text-left">
+                        {{column}}
+                    </th>
+                    <th class="text-right">
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of products , let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{p.name}}</td>
+                    <td>{{p.pictureUrl}}</td>
+                    <td>{{p.price}}</td>
+                    <td>{{p.description}}</td>
+                    <td class="td-actions text-right ">
+                        <button type="button " rel="tooltip " class="btn btn-info btn-round ">
+                            <i class="material-icons ">person</i>
+                        </button>
+                        <button (click)="onSelect(p)" data-toggle="modal" data-target="#editModal" type=" button "
+                            rel="tooltip " class="btn btn-success btn-round ">
+                            <i class="material-icons ">edit</i>
+                        </button>
+                        <button (click)="deleteProduct(p)" data-toggle="modal" data-target="#deleteModal" type="button "
+                            rel="tooltip " class="btn btn-danger btn-round ">
+                            <i class="material-icons ">close</i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal edit -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div *ngIf="selectedProduct" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form >
+                <div class="modal-body">
+                    <div class="content">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button (click)="update(editForm)" type="submit" class="btn btn-primary" data-dismiss="modal">Save changes</button> -->
+                    <!-- <input (click)="edit(editForm)" type="submit" value="Save changes" class="btn btn-simple btn-primary btn-lg" /> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

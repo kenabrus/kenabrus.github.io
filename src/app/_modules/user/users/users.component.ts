@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
+  headers = ['#', 'First Name', 'Last Name', 'Email'];
   constructor() { }
 
   ngOnInit(): void {

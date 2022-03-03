@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../Product';
+import { Product } from '../IProduct';
+
 import { ProductService } from '../product.service';
 
 @Component({
@@ -12,11 +13,18 @@ export class ProductsComponent implements OnInit {
   products: any[] = [];
   info: string = 'Witaj';
   currentItem = 'Television';
+  headers = ['#', 'Name', 'Picture Url', 'Price', 'Description'];
+  selectedProduct: Product | undefined;
 
   constructor(private productService : ProductService) { }
 
   ngOnInit(): void {
     this.getProducts();
+  }
+
+  public onSelect(product: Product): void {
+    this.selectedProduct = product;
+    console.log('onSelect()' + product.id);
   }
 
   getProducts(): void {
