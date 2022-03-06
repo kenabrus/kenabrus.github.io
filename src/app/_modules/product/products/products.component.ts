@@ -1,7 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../IProduct';
+import {
+  MatDialog,
+  MatDialogRef,
+  MAT_DIALOG_DATA
+} from "@angular/material/dialog";
 
 import { ProductService } from '../product.service';
+import { ProductItemComponent } from '../product-item/product-item.component';
 
 @Component({
   selector: 'app-products',
@@ -25,6 +31,17 @@ export class ProductsComponent implements OnInit {
   public onSelect(product: Product): void {
     this.selectedProduct = product;
     console.log('onSelect()' + product.id);
+    // this.matDialogRef = this.matDialog.open(ProductItemComponent, {
+    //   data: { product: product },
+    //   disableClose: true
+    // });
+
+    // this.matDialogRef.afterClosed().subscribe(res => {
+    //   if ((res == true)) {
+    //     // this.name = "";
+    //     console.log('matDialogRef.afterClosed()');
+    //   }
+    // });
   }
 
   getProducts(): void {

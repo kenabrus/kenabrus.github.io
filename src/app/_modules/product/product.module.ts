@@ -8,6 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { ProductService } from './product.service';
+import { AppMaterialModule } from 'src/app/app.material.module';
 
 
 
@@ -23,6 +24,7 @@ import { ProductService } from './product.service';
     BrowserModule,
     FontAwesomeModule,
     FormsModule,
+    AppMaterialModule
   ],
   providers: [
     ProductService 
