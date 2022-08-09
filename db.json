@@ -24,18 +24,58 @@
   ],
   "users": [
     {
-      "id": 1,
-      "firstName": "Admin",
-      "lastname": "Admin",
-      "email": "admin@email.com",
-      "password": "qwerty"
+      "Id": 1,
+      "FirstName": "Andrzej",
+      "LastName": "Urbanek",
+      "UserName": "au",
+      "Email": "au@email.com",
+      "EmailConfirmed": true,
+      "Passwod": "Pass123$",
+      "Role": "Admin"
     },
     {
-      "id": 2,
-      "firstName": "User",
-      "lastname": "User",
-      "email": "user@email.com",
-      "password": "qwerty"
+      "Id": 2,
+      "UserName": "jk",
+      "FirstName": "Jarosław",
+      "LastName": "Kukawski",
+      "Email": "jk@email.com",
+      "EmailConfirmed": true,
+      "Passwod": "Pass123$",
+      "Role": "Admin"
+    },
+    {
+      "Id": 3,
+      "FirstName": "Kacper",
+      "LastName": "Makowski",
+      "UserName": "km",
+      "Email": "km@email.com",
+      "EmailConfirmed": true,
+      "Passwod": "Pass123$",
+      "Role": "Admin"
+    },
+    {
+      "Id": 4,
+      "FirstName": "Łukasz",
+      "LastName": "Suchożebrski",
+      "UserName": "ls",
+      "Email": "ls@email.com",
+      "EmailConfirmed": true,
+      "Passwod": "Pass123$",
+      "Role": "Admin"
+    }
+  ],
+  "roles": [
+    {
+      "Id": 1,
+      "RoleName": "Admin"
+    },
+    {
+      "Id": 2,
+      "RoleName": "User"
+    },
+    {
+      "Id": 3,
+      "RoleName": "Anonymous"
     }
   ]
 }
