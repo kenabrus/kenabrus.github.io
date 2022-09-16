@@ -5,3 +5,10 @@ npm install @angular/cdk --save
 
 npm install json-server
 // npm run server
+
+ng g c layout --module layout
+ng g c menu --module layout
+ng g c content --module layout
+ng g c footer --module layout
+
+ng g m layout-routing --module layout --flat

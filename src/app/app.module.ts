@@ -6,6 +6,7 @@ import { UsersModule } from 'src/_modules/users/users.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     IdentityModule,
     UsersModule,
-    CarsModule
+    CarsModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
