@@ -2,6 +2,7 @@ npm install primeng --save
 npm install primeicons --save
 npm install font-awesome --save
 npm install @angular/cdk --save
+npm i primeflex
 
 npm install json-server
 // npm run server
